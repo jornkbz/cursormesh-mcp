@@ -29,7 +29,7 @@ Use the `cursormesh` MCP server to interact with the user's real Chrome browser 
 4. **Handle security gates & handoffs:**
    - If `click` or `fill` returns `SECURITY_APPROVAL_REQUIRED`, pause and ask the user to approve the sensitive action (password, payment, deletion) in Chrome.
    - Use `notify_user({ title, message, kind: "action_required" | "done", tabId })` to send a clickable desktop notification when user intervention is needed or when a long task completes.
-   - Call `release_cursor({ tabId, summary })` when finished.
+   - Call `release_cursor({ tabId, summary, closeGroup: true })` when finished and no user reply/review is needed (closes only this agent's temporary tab group cleanly). Keep `closeGroup: false` (default) when leaving a draft, login, or form open for the user.
 
 ## Reference
 - Chrome Extension & full docs: https://cursormesh.app/docs/
