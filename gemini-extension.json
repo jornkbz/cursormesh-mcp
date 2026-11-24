@@ -1,0 +1,12 @@
+{
+  "name": "cursormesh",
+  "version": "0.1.1",
+  "description": "Control Chrome tabs with visible multi-agent AI cursors, colored tab groups, native file uploads, desktop notifications, and instant STOP.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "cursormesh": {
+      "command": "npx",
+      "args": ["-y", "@cursormesh/mcp-bridge", "--agent-name", "Gemini", "--agent-color", "#00D4FF"]
+    }
+  }
+}

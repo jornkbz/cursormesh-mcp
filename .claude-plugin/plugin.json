@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "cursormesh",
+  "version": "0.1.1",
+  "description": "Control Chrome with visible multi-agent AI cursors, colored tab groups, native CDP file uploads, focus modes, desktop notifications, and instant STOP.",
+  "author": {
+    "name": "CursorMesh",
+    "email": "soporte@cursormesh.app",
+    "url": "https://cursormesh.app"
+  },
+  "homepage": "https://cursormesh.app",
+  "repository": "https://github.com/jornkbz/cursormesh-mcp",
+  "license": "MIT",
+  "keywords": [
+    "chrome",
+    "browser-automation",
+    "mcp",
+    "multi-agent",
+    "cursors",
+    "upload-file"
+  ],
+  "mcpServers": {
+    "cursormesh": {
+      "command": "npx",
+      "args": ["-y", "@cursormesh/mcp-bridge", "--agent-name", "Claude", "--agent-color", "#F59E0B"]
+    }
+  }
+}

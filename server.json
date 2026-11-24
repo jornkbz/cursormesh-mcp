@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.jornkbz/cursormesh",
+  "description": "Control Google Chrome tabs with visible multi-agent AI cursors, colored tab groups, native file uploads (CDP), focus control, desktop notifications, and instant STOP.",
+  "version": "0.1.1",
+  "repository": {
+    "url": "https://github.com/jornkbz/cursormesh-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@cursormesh/mcp-bridge",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
