@@ -7,6 +7,17 @@ description: Control Google Chrome tabs using CursorMesh MCP with visible multi-
 
 Use the `cursormesh` MCP server to interact with the user's real Chrome browser safely and transparently.
 
+## First-Time Local MCP Setup (if `cursormesh` tools are not connected yet)
+1. Install the **CursorMesh** Chrome extension from https://cursormesh.app/ (requires Node.js 18+).
+2. Register the local MCP server in Claude Code:
+   ```bash
+   claude mcp add cursormesh -- npx -y @cursormesh/mcp-bridge --agent-name Claude --agent-color "#F59E0B"
+   ```
+3. Print your one-time local pairing token and paste it in **CursorMesh Side Panel → MCP & Pro**:
+   ```bash
+   npx -y @cursormesh/mcp-bridge --print-token
+   ```
+
 ## Core Loop
 1. **Locate or open a tab:** Call `list_tabs` to see open tabs, or `open_tab({ url })` to open a dedicated tab in the agent's colored Chrome tab group. Always pass `tabId` on subsequent calls.
 2. **Inspect the DOM:** Call `snapshot({ tabId })` before clicking or typing. Use the returned `[uid]` identifiers (e.g. `e12`), `href` attributes, and visible text (including open Shadow DOM).
@@ -20,6 +31,6 @@ Use the `cursormesh` MCP server to interact with the user's real Chrome browser 
    - Use `notify_user({ title, message, kind: "action_required" | "done", tabId })` to send a clickable desktop notification when user intervention is needed or when a long task completes.
    - Call `release_cursor({ tabId, summary })` when finished.
 
-## Setup Reference
+## Reference
 - Chrome Extension & full docs: https://cursormesh.app/docs/
-- One-time local pairing token: `npx -y @cursormesh/mcp-bridge --print-token`
+- npm package: https://www.npmjs.com/package/@cursormesh/mcp-bridge

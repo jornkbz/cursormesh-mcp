@@ -3,6 +3,7 @@
   "name": "cursormesh",
   "version": "0.1.1",
   "description": "Control Chrome with visible multi-agent AI cursors, colored tab groups, native CDP file uploads, focus modes, desktop notifications, and instant STOP.",
+  "icon": ".claude-plugin/icon.png",
   "author": {
     "name": "CursorMesh",
     "email": "soporte@cursormesh.app",
@@ -18,11 +19,5 @@
     "multi-agent",
     "cursors",
     "upload-file"
-  ],
-  "mcpServers": {
-    "cursormesh": {
-      "command": "npx",
-      "args": ["-y", "@cursormesh/mcp-bridge", "--agent-name", "Claude", "--agent-color", "#F59E0B"]
-    }
-  }
+  ]
 }
