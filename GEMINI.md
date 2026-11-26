@@ -10,5 +10,5 @@ You have access to the `cursormesh` MCP server, which controls the user's real G
 5. **Finish cleanly:** Call `release_cursor({ tabId, summary, closeGroup: true })` when a task is completely finished and needs no user review or reply (this closes only this agent's temporary tab group automatically). Omit `closeGroup` (keep the tab open) when waiting for user input, review, login, or a draft, and use `notify_user({ title, message, kind: "action_required", tabId })`.
 
 ## Prerequisites
-- Install the **CursorMesh** Chrome extension from https://cursormesh.app/
+- Install the **CursorMesh** Chrome extension from the Chrome Web Store: https://chromewebstore.google.com/detail/cursormesh/hcbdhdajjpabnjhabpakmfogdlmlnghn (docs: https://cursormesh.app/docs/)
 - Pair once by running `npx -y @cursormesh/mcp-bridge --print-token` and pasting the token in CursorMesh → Side Panel → **MCP & Pro**.

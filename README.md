@@ -1,5 +1,6 @@
 # CursorMesh — Multi-Agent AI Cursors for Chrome (MCP · Gemini CLI · Claude Plugin)
 
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install-FF2E88?style=flat-square&logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/cursormesh/hcbdhdajjpabnjhabpakmfogdlmlnghn)
 [![Website](https://img.shields.io/badge/Website-cursormesh.app-00D4FF?style=flat-square)](https://cursormesh.app/)
 [![Docs](https://img.shields.io/badge/Docs-cursormesh.app%2Fdocs-7C3AED?style=flat-square)](https://cursormesh.app/docs/)
 [![npm](https://img.shields.io/npm/v/@cursormesh/mcp-bridge?style=flat-square&color=10B981)](https://www.npmjs.com/package/@cursormesh/mcp-bridge)
@@ -13,7 +14,7 @@ Control your real Google Chrome browser from **Gemini CLI**, **Claude Code / Cla
 
 ## Prerequisites
 
-1. **Google Chrome** with the **[CursorMesh Chrome Extension](https://cursormesh.app/)** installed.
+1. **Google Chrome** with the **[CursorMesh Chrome Extension (Chrome Web Store)](https://chromewebstore.google.com/detail/cursormesh/hcbdhdajjpabnjhabpakmfogdlmlnghn)** installed.
 2. **Node.js 18+** (required to run `npx -y @cursormesh/mcp-bridge` locally; [nodejs.org](https://nodejs.org/)).
 3. **One-time pairing token:** run:
    ```bash

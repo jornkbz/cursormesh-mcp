@@ -8,7 +8,7 @@ description: Control Google Chrome tabs using CursorMesh MCP with visible multi-
 Use the `cursormesh` MCP server to interact with the user's real Chrome browser safely and transparently.
 
 ## First-Time Local MCP Setup (if `cursormesh` tools are not connected yet)
-1. Install the **CursorMesh** Chrome extension from https://cursormesh.app/ (requires Node.js 18+).
+1. Install the **CursorMesh** Chrome extension from the Chrome Web Store: https://chromewebstore.google.com/detail/cursormesh/hcbdhdajjpabnjhabpakmfogdlmlnghn (requires Node.js 18+).
 2. Register the local MCP server in Claude Code:
    ```bash
    claude mcp add cursormesh -- npx -y @cursormesh/mcp-bridge --agent-name Claude --agent-color "#F59E0B"
