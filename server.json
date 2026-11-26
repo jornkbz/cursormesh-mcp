@@ -4,7 +4,7 @@
   "title": "CursorMesh",
   "description": "Control Google Chrome with visible multi-agent AI cursors, colored tab groups, and CDP uploads.",
   "websiteUrl": "https://cursormesh.app",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "url": "https://github.com/jornkbz/cursormesh-mcp",
     "source": "github"
@@ -13,7 +13,7 @@
     {
       "registryType": "npm",
       "identifier": "@cursormesh/mcp-bridge",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "transport": {
         "type": "stdio"
       }
